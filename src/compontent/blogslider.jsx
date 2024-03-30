@@ -8,25 +8,25 @@ import '../style/blog-slider.css'
 function BlogSlider() {
     const data = [
         {
-            name: 'Nihad',
+            name: 'Bajal',
             img: 'https://www.jdtislamnewhope.com/img/event1.jpeg',
             heading: 'Lorem Ipsum has been the industrys ',
             date: '24 Feb 2023'
         },
         {
-            name: 'Nabeel',
+            name: 'Bachu',
             img: 'https://www.jdtislamnewhope.com/img/onam1.jpeg',
             heading: 'Lorem Ipsum has been the industrys ',
             date: '24 Feb 2023'
         },
         {
-            name: 'Sajid',
+            name: 'Jimsh',
             img: 'https://www.jdtislamnewhope.com/img/onam3.jpeg',
             heading: 'Lorem Ipsum has been the industrys ',
             date: '24 Feb 2023'
         },
         {
-            name: 'Salman faris',
+            name: 'Bachu',
             img: 'https://www.jdtislamnewhope.com/img/onam1.jpeg',
             heading: 'Lorem Ipsum has been the industrys ',
             date: 'CMO'

@@ -1,19 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Logo1 from '../assets/logo/logo-t.png'
-import { Mobile } from "../assets/img/logo/college-logo.png";
+import Logo1 from '../assets/logo/logo-t.png';
+import Menu from "../assets/icons/menu.png";
+import Close from "../assets/icons/close.png";
 
 const StyledHeader = styled.header`
   background-color: #0A5139;
-  color:#fff;
+  color: #fff;
   width: 100%;
   padding: 10px 12px 8px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  justify-content:end !importent;
-  width:100%
+
   .nav_logo {
     padding: 0 12px;
     .nav-logo-link {
@@ -23,100 +23,119 @@ const StyledHeader = styled.header`
       font-weight: bold;
     }
   }
-  .menuToggleBtn {
-    display: none;
-    color: white;
-    font-size: 24px;
-    position: absolute;
-    right: 20px;
-    top: 28px;
-    cursor: pointer;
-  }
+
   img {
-    max-height:60px;
-    max-weight:70px;
+    max-height: 60px;
+    max-width: 70px;
+  }
+  .menuToggleBtn
+  {
+    display:none
   }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+
     .menuToggleBtn {
       display: block;
+      position: absolute;
+      right: 20px;
+      top: 0px;
+      cursor: pointer;
     }
   }
 `;
-const NavManu = styled.ul`
+
+const NavMenu = styled.ul`
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content:end;
 
   li {
+    margin: 0;
+    padding: 0;
+
     &:hover {
       cursor: pointer;
       color: #44a8f4;
       border-radius: 4px;
     }
   }
+
   .nav-menu-list {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 10px 10px;
-    opacity:0.8;
+    opacity: 0.8;
+
     &:hover {
-    opacity:1;
+      opacity: 1;
     }
   }
   @media screen and (max-width: 768px) {
-    display: ${(props) => (props.isToggleOpen ? "block" : "none")};
+    display: ${(props) => (props.isToggleOpen ? "flex" : "none")};
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 5px;
   }
 `;
-
 const Navbar = () => {
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsToggleOpen(!isToggleOpen);
+  };
+
   return (
     <>
       <StyledHeader>
-      <div className="container">
-        <div className="row">
-        <div className="col-md-4">
-        <img className="img-fluid h-" src={Logo1}  />
-       </div>
-       <div className="col-md-8">
-       <NavManu className="justify-content-end mt-2">
-        <li>
-            <Link to={"/"} className="nav-menu-list">
-          Home
-            </Link>
-            </li>
-          <li>
-            <Link to={"/about"} className="nav-menu-list">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to={"/blogs"} className="nav-menu-list">
-              Blog
-            </Link>
-          </li>
-          <li>
-          <Link to={"/gallery"} className="nav-menu-list">
-             Gallery
-            </Link>
-          </li>
-          <li>
-            <Link to={"/contact"} className="nav-menu-list">
-             Contact
-            </Link>
-          </li>
-        </NavManu>
-       </div>
-        </div>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-4">
+              <img className="img-fluid" src={Logo1} alt="Logo" />
+            </div>
+            <div className="col-8">
+              <NavMenu isToggleOpen={isToggleOpen} >
+                <li>
+                  <Link to={"/"} className="nav-menu-list">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/about"} className="nav-menu-list">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/blogs"} className="nav-menu-list">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/gallery"} className="nav-menu-list">
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/contact"} className="nav-menu-list">
+                    Contact
+                  </Link>
+                </li>
+              </NavMenu>
+              <div className="menuToggleBtn" onClick={toggleMenu}>
+                {isToggleOpen ?  <img src={Close}/> : <img src={Menu}/>  }
+              </div>
+            </div>
+          </div>
         </div>
       </StyledHeader>
     </>
   );
 };
-export default Navbar
+
+export default Navbar;
