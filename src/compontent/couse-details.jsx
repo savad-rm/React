@@ -21,6 +21,18 @@ function CourseDetails() {
       date: 'Oct.14,2021',
       description: 'JDT Islam College of Nursing qualified for the finals of the Kerala University of Health Science Intercollegiate Football Championship. The semifinals were held at KMCT Medical College from December 31 to January 3.JDT Islam College of Nursing came second in the tournament, beating Dr. Moopens Medical College, the former champions. There were 56 teams in total and JDT Islam College of Nursing qualified for the finals after winning 6 matches. The Interzone Competitions will be held at Calicut Medical College from January 15 to 17.',
     },
+    {
+      imageUrl: S1,
+      name: 'Abdul Rahoof',
+      date: 'Oct.14,2021',
+      description: 'JDT Islam College of Nursing qualified for the finals of the Kerala University of Health Science Intercollegiate Football Championship. The semifinals were held at KMCT Medical College from December 31 to January 3.JDT Islam College of Nursing came second in the tournament, beating Dr. Moopens Medical College, the former champions. There were 56 teams in total and JDT Islam College of Nursing qualified for the finals after winning 6 matches. The Interzone Competitions will be held at Calicut Medical College from January 15 to 17.',
+    },
+    {
+      imageUrl: S2,
+      name: 'Abdul Rahoof',
+      date: 'Oct.14,2021',
+      description: 'JDT Islam College of Nursing qualified for the finals of the Kerala University of Health Science Intercollegiate Football Championship. The semifinals were held at KMCT Medical College from December 31 to January 3.JDT Islam College of Nursing came second in the tournament, beating Dr. Moopens Medical College, the former champions. There were 56 teams in total and JDT Islam College of Nursing qualified for the finals after winning 6 matches. The Interzone Competitions will be held at Calicut Medical College from January 15 to 17.',
+    },
     // Add more courses as needed
   ];
 
@@ -38,22 +50,21 @@ function CourseDetails() {
       <section>
         <div className='container'>
           {courses.map((course, index) => (
-            <div key={index} className="row border-bottom" onClick={() => handleShowModal(course)}>
-              <div className="col-md-12 col-lg-5 col-12 py-3 mb-3 " data-aos="fade-up">
+            <div key={index} className={`row border-bottom align-items-center ${index % 2 === 0 ? '' : 'flex-row-reverse'}`} onClick={() => handleShowModal(course)}>
+              <div className={`col-md-12 col-lg-6 col-12 py-3 mb-3`} data-aos="fade-up" data-aos-offset="10">
                 <div className="post-img">
                   <img
                     className='blog-img'
                     src={course.imageUrl}
                     alt={course.name}
-                    
                   />
                 </div>
               </div>
-              <div className='col-md-12 col-lg-7 py-3' data-aos="fade-up">
+              <div className={`col-md-12 col-lg-6 py-3`} data-aos="fade-up">
                 <div className="post-details">
-                  <h4 className='text-uppercase'>{course.name}</h4>
-                  <h6 className='text-l-green'>{course.date}</h6>
-                  <p>{course.description}</p>
+                  <h5 className='text-uppercase'>{course.name}</h5>
+                  <h6 className='text-l-green truncate'>{course.date}</h6>
+                  <p className='truncate-6 text-justify'>{course.description}</p>
                 </div>
               </div>
             </div>
@@ -64,9 +75,9 @@ function CourseDetails() {
         <Modal className='blog-modal' show={showModal} onHide={handleCloseModal} size='lg' centered>
           <Modal.Header closeButton>
             <Modal.Title>
-             <div className="text-center">
-             <img className='blog-img' src={selectedCourse.imageUrl} alt={selectedCourse.name} />
-             </div>
+              <div className="text-center">
+                <img className='blog-img' src={selectedCourse.imageUrl} alt={selectedCourse.name} />
+              </div>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style/footer.css';
+import { Link } from "react-router-dom";
 import Instagragm from "../assets/img/img/insta.png";
 import Facebook from '../assets/img/img/fb.png';
 import Logo from '../assets/logo/logo-t.png'
@@ -27,11 +28,11 @@ function Footer() {
           <div className="col-lg-3 col-md-6 col-12">
           <h3 className="widget-title">Explore</h3>
           <ul className='footer-contact'>
-            <li> Home</li>
-            <li>About</li>
-            <li>Course</li>
-            <li>Career</li>
-            <li>Contact</li>
+          <Link to={"/"}> <li > Home</li></Link>
+          <Link to={"/about"}><li>About</li></Link>
+          <Link to={"/blogs"}><li>Blog</li></Link>
+          <Link to={"/gallery"}><li>Gallery</li></Link>
+          <Link to={"/contact"}><li>Contact</li></Link>
           </ul>
           </div>
           <div className="col-lg-3">

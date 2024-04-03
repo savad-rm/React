@@ -68,10 +68,15 @@
     list-style: none;
     margin-bottom: 20px;
   }
-  .contact-right li a
+  .contact-right li a 
   {
     color: #f6ebeb !important;
     opacity: 0.8;
     display: inline-flex;  
     font-size: 1rem;
+  }
+  .footer-contact li:hover
+  {
+color: #fff;
+opacity: 1 !important;
   }

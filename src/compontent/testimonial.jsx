@@ -29,7 +29,7 @@ function Testimonial() {
           <div className='mt-20'>
            <Slider {...settings}>
             {data.map((d, index) => (
-              <div key={index} className='bg-l-blue gap-6' data-aos="fade-down">
+              <div key={index} className='bg-l-blue gap-6' data-aos="fade-up">
                 <div className="row align-items-center">
                   <div className="col-md-4">
                     <div className='testi-head flex justify-center items-center'>

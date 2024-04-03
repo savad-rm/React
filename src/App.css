@@ -25,6 +25,8 @@ body
   padding: 0;
   margin: 0;
   background: #ffffffe4 !important;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  /* font-family: Roboto !important; */
 }
 .menuTitle
 {
@@ -147,3 +149,20 @@ section
   background-color: #fff;
   text-decoration: none;
   border-color: #edf2f0;}
+
+  a, a:hover
+  {
+    list-style: none !important;
+    text-decoration: none !important;
+  }
+  .truncate-6
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+}
+.truncate-6
+{
+  -webkit-line-clamp: 6;
+}
