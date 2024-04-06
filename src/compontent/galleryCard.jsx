@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import '../style/gallery.css';
 import G1 from '../assets/img/home/banner2.jpg';
 import G2 from '../assets/img/home/2.jpeg';
