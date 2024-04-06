@@ -13,6 +13,7 @@ import Img8 from '../assets/img/teachers/8.jpg';
 import Img9 from '../assets/img/teachers/9.jpg';
 import Img10 from '../assets/img/teachers/10.jpg';
 import '../style/teacher.css'
+
 const Teachers = () => {
     const productData =[
         {
@@ -132,7 +133,7 @@ const Teachers = () => {
               <div key={index} className="col-12" data-aos="fade-up">
               <div className="card-teacher mb-3">
               <div className="teacher-card">
-                <img src={item.image} alt="image" className="gallery-image img-fluid" />
+                <img src={item.image} alt={item.name} className="gallery-image img-fluid" />
                 <div className='teacher-info'>
                     <h4>{item.name}</h4>
                     <h6>{item.desc}</h6>

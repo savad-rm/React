@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Phone from '../assets/img/img/phone.png';
 import SMS from '../assets/img/img/sms.png';
 import Address from '../assets/img/img/location.png';
-import MapContainer from '../compontent/map'
-
-
+import MapContainer from '../compontent/map';
 
 function ContactInfo () {
   return (
@@ -39,16 +37,21 @@ function ContactInfo () {
                             <h4>Contact Info</h4>
                             <div className="d-flex info_single align-items-center">
                                 <img alt='phone' src={Phone} className="cont-icons" />
-                                <span><a href="tel:+91 4952 731 420" className="text-white"></a>+91 4952 731 420</span>
+                                <span>
+                                  <a href="tel:+914952731420" className="text-white">Phone: +91 4952 731 420</a>
+                                </span>
                             </div>
                             <div className="d-flex info_single align-items-center">
                                 <img alt='sms' src={SMS} className="cont-icons" />
-                                <span ><a className='text-white' href="mailto:info@jdtislam.org">info@jdtislam.org</a></span> <br />
+                                <span>
+                                 <a className='text-white' href="mailto:info@jdtislam.org">Email: info@jdtislam.org</a>
+                                </span>
+                                <br />
                             </div>
                             <div className="d-flex info_single">
                                 <img alt='adress' src={Address} className="cont-icons" />
 
-                                <span>JDT Islam, Jamiath Hill,Marikunnu P O, Calicut - 12,Kerala, India</span>
+                                <span>Address: JDT Islam, Jamiath Hill, Marikunnu P O, Calicut - 12, Kerala, India</span>
                             </div>
             
                         </div>
@@ -62,9 +65,3 @@ function ContactInfo () {
   );
 };
 export default ContactInfo;
-
-
-
-
-
-
