@@ -11,15 +11,15 @@ function Footer() {
         <div className="row">
           <div className="col-lg-5 col-md-6 col-12">
             <div className="logo">
-              <img className='logo' src={Logo} alt="" />
+              <img className='logo' src={Logo} alt="logo" />
             </div>
             <p className='sec-dec'>
               Lorem ipsum dolor sit amet. <br />
               Lorem ipsum dolor sit amet.
             </p>
             <div className='social'>
-              <img className='social-media-links' src={Instagragm}></img>
-              <img className='social-media-links' src={Facebook}></img>
+              <img alt='insta' className='social-media-links' src={Instagragm}></img>
+              <img alt='insta' className='social-media-links' src={Facebook}></img>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-12">

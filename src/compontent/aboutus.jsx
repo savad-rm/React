@@ -22,7 +22,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-md-4 col-12"data-aos="fade-down">
-                <img src={Aboutimg} className="img-fluid" />
+                <img alt='aboutimg' src={Aboutimg} className="img-fluid" />
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ function AboutUs() {
         <div className="container">
          <div className="row align-items-center justify-content-center">
              <div className=" col-xl-7 col-lg-6 col-md-12" data-aos="fade-right">
-              <img src={Vission} className='vission-img' />
+              <img  alt ="vission" src={Vission} className='vission-img' />
              </div>
              <div className="col-xl-5 col-lg-6 col-md-12" data-aos="fade-left">
               <div className="row">

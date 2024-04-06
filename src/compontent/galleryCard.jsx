@@ -5,7 +5,7 @@ import '../style/gallery.css';
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [ setCurrentIndex] = useState
 
   const data = [
     {
@@ -52,15 +52,6 @@ const Gallery = () => {
     setSelectedImage(null);
     document.body.style.overflow = 'scroll'; 
   };
-
-  const playSlideshow = () => {
-    setIsPlaying(true);
-  };
-
-  const stopSlideshow = () => {
-    setIsPlaying(false);
-  };
-
   useEffect(() => {
     let intervalId;
 

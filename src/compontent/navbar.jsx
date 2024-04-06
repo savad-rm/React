@@ -128,7 +128,7 @@ const Navbar = () => {
                 </li>
               </NavMenu>
               <div className="menuToggleBtn" onClick={toggleMenu}>
-                {isToggleOpen ?  <img src={Close}/> : <img src={Menu}/>  }
+                {isToggleOpen ?  <img src={Close} alt="close"/> : <img src={Menu} alt="menu"/>  }
               </div>
             </div>
           </div>

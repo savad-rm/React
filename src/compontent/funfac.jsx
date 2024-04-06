@@ -17,21 +17,21 @@ function Funfact() {
             <div className="row align-items-center justify-content-center">
                 <div className="col-lg-4 col-md-6 col-12" data-aos="fade-down">
                    <div className="fun-factor">
-                    <img src ={Fac} />
+                    <img alt='fac' src ={Fac} />
                     <h2> <span  data-counter="27" className="timer">27</span></h2>
                     <p>Million Learners</p>
                    </div>
                 </div>
                 <div className="col-lg-4 col-md-6 col-12" data-aos="fade-down">
                    <div className="fun-factor">
-                    <img src ={Fac2} />
+                    <img alt='fac' src ={Fac2} />
                     <h2> <span  data-counter="27" className="timer">27</span></h2>
                     <p>Million Learners</p>
                    </div>
                 </div>
                 <div className="col-lg-4 col-md-6 col-12" data-aos="fade-down">
                    <div className="fun-factor">
-                    <img src ={Fac3} />
+                    <img alt='fac' src ={Fac3} />
                     <h2> <span  data-counter="27" className="timer">27</span></h2>
                     <p>Million Learners</p>
                    </div>

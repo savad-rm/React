@@ -42,7 +42,6 @@ function BlogSlider() {
         autoplay:true,
         slidesToScroll: 1,
         arrows:false,
-        dots:false,
         responsive: [
             {
                 breakpoint: 1024,

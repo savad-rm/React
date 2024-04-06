@@ -23,7 +23,7 @@ function Certificate() {
                 </div>
                 <div className="col-xl-8 col-lg-7 col-md-7">
                     <div className="certificate-img" >
-                        <img src={CertificateImg} className="img-fluid award-img rounded-10"  data-aos="fade-left"/>
+                        <img alt='certificate' src={CertificateImg} className="img-fluid award-img rounded-10"  data-aos="fade-left"/>
                     </div>
                 </div>
                </div>

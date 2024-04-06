@@ -78,7 +78,6 @@ const Teachers = () => {
       
     ]
     var settings = {
-      dots: false,
       arrows:false,
       autoplay:true,
       autoplaySpeed: 2000,

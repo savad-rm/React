@@ -10,14 +10,12 @@ import "../style/testimonial.css"
 
 function Testimonial() {
     const settings = {
-        dots: true,
         infinite: true,
         speed: 300,
         autoplay:false,
         pauseOnFocus: true,
         pauseOnHover: true,
         slidesToShow: 1,
-        dots:false,
         arrows:true,
         slidesToScroll: 1,
       };
@@ -33,7 +31,7 @@ function Testimonial() {
                 <div className="row align-items-center">
                   <div className="col-md-4">
                     <div className='testi-head flex justify-center items-center'>
-                      <img src={d.img} alt='' className='test-img img-fluid'/>
+                      <img src={d.img} alt='d.img' className='test-img img-fluid'/>
                     </div>
                   </div>
                   <div className="col-md-8">
