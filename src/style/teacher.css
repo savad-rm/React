@@ -14,7 +14,11 @@
     transition: 1s ease-out;
     border-radius: 5px;
 }
-
+/* .card-teacher
+{
+    box-shadow:8px 8px 10px #d1d0d0 !important;
+    padding: 10px 20px 5px 10px;
+} */
 .teacher-card:hover .teacher-info {
     transition: 1s ease-out;
 }
@@ -29,6 +33,13 @@
     border-radius: 5px;
     height: 255px;
 
+}
+@media(max-width:567px)
+{
+    .teacher-card img
+    {
+        height: 355px;
+    }
 }
 
 .teacher-card:hover img {

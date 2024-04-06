@@ -85,31 +85,29 @@ const Teachers = () => {
       focusOnHover:true,
       infinite: true,
       speed: 500,
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 1399,
             settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 1024,
-            settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 567,
+            settings: {
+              slidesToShow: 1,
               slidesToScroll:1,
               initialSlide: 1
             }
@@ -133,12 +131,14 @@ const Teachers = () => {
         <Slider {...settings}>
           {productData.map((item, index) => (
               <div key={index} className="col-12" data-aos="fade-up">
+              <div className="card-teacher mb-3">
               <div className="teacher-card">
                 <img src={item.img} alt={`Image ${index}`} className="gallery-image img-fluid" />
                 <div className='teacher-info'>
                     <h4>{item.name}</h4>
                     <h6>{item.desc}</h6>
                   </div>
+              </div>
               </div>
             </div>
            ))}
