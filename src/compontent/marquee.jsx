@@ -1,7 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Right from '../assets/img/icons/forward-button.png'
-import Pause from '../assets/img/icons/pause.png'
-import Play from '../assets/img/icons/play-buttton.png'
 function Marquee() {
           
 const marqueeContentArray = [
@@ -50,18 +47,6 @@ const marqueeContentArray = [
             <a key={index} href={content.link} style={{ marginRight: '10px' }}>{content.text}</a>
           ))}
         </marquee>
-        {/* <div className="marquee-controls">
-          <button onClick={handleTogglePlayPause}>
-          {isPlaying ? <img src={Pause} alt="Pause" /> : <img src={Play} />}
-
-          </button>
-          <button onClick={handlePrevious}>
-            <img src={Right} className="left-arrow"/>
-          </button>
-          <button onClick={handleNext}>
-          <img src={Right} alt="" />
-            </button>
-        </div> */}
       </div>
     </div>
   )

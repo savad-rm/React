@@ -25,7 +25,7 @@ function couseCad() {
 
   return (
     <div>
-      <CourseDetails course={courses} /> {/* Changed prop name to course */}
+      <CourseDetails course={courses} /> 
     </div>
   );
 }

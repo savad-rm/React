@@ -1,7 +1,6 @@
 import React from 'react'
 import '../style/course-card.css'
 import Card1 from "../../src/assets/img/home/card-1.jpg";
-import Card2 from "../../src/assets/img/home/card-2.jpg";
 import Card3 from "../../src/assets/img/home/card-3.jpg";
 import Card4 from "../../src/assets/img/home/card-4.jpg"
 

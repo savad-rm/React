@@ -67,7 +67,7 @@ const Gallery = () => {
     if (isPlaying) {
       intervalId = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-      }, 2000); // Change slide every 2 seconds
+      }, 2000); 
     }
 
     return () => {
@@ -98,7 +98,6 @@ const Gallery = () => {
           <span className="close-button" onClick={closeLightbox}>×</span>
           <img src={data[selectedImage].imageUrl} alt={`Image ${selectedImage}`} className="lightbox-image" />
           <div className="lightbox-info">
-            {/* Add lightbox information here if needed */}
           </div>
         </div>
       )}

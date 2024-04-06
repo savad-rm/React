@@ -1,5 +1,4 @@
 import React from 'react'
-import Banner from '../compontent/banner'
 import CouseDtails from '../compontent/couse-details'
 import PageBanner from '../compontent/pagebanner';
 import Navbar from '../compontent/navbar';
