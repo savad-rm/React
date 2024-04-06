@@ -36,7 +36,7 @@ function Footer() {
           <h3 className="widget-title">Contact</h3>
          <ul className='contact-right'>
          <li>
-            <a href ="">JDT Islam, Jamiath Hill,
+            <a href ="https://maps.app.goo.gl/8XeNuw6sy5TbyArf6">JDT Islam, Jamiath Hill,
               Marikunnu P O, Calicut - 12,
               Kerala, India
             </a>
