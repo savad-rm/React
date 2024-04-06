@@ -59,7 +59,7 @@ function CourseDetails() {
                   />
                 </div>
               </div>
-              <div className={`col-md-12 col-lg-6 py-3`} data-aos="fade-up">
+              <div className={`col-md-12 col-lg-6 py-3`} data-aos="fade-up"data-aos-offset="10">
                 <div className="post-details">
                   <h5 className='text-uppercase'>{course.name}</h5>
                   <h6 className='text-l-green truncate'>{course.date}</h6>

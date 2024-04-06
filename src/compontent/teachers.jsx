@@ -80,7 +80,7 @@ const Teachers = () => {
     ]
     var settings = {
       arrows:false,
-      autoplay:false,
+      autoplay:true,
       autoplaySpeed: 2000,
       focusOnHover:true,
       infinite: true,
@@ -130,7 +130,7 @@ const Teachers = () => {
           </div>
         <Slider {...settings}>
           {productData.map((item, index) => (
-              <div key={index} className="col-12" data-aos="fade-up">
+              <div key={index} className="col-12" data-aos="fade-up" data-aos-offset="10">
               <div className="card-teacher mb-3">
               <div className="teacher-card">
                 <img src={item.image} alt={item.name} className="gallery-image img-fluid" />
