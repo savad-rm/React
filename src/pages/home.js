@@ -10,7 +10,6 @@ import Testimonial from '../compontent/testimonial';
 import BlogSlider from '../compontent/blogslider';
 import Navbar from '../compontent/navbar';
 import Footer from '../compontent/footer';
-import Marquee from '../compontent/marquee';
 
 
 function Home() { 
@@ -18,7 +17,6 @@ function Home() {
   return (
       <div className='main-home'>
           <Navbar></Navbar>
-        <Marquee></Marquee>
         <Banner></Banner>
         <BlogSlider></BlogSlider>
         <Course></Course>

@@ -2,75 +2,75 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Img1 from '../assets/img/teachers/1.jpg';
-import Img2 from '../assets/img/teachers/2.jpg';
-import Img3 from '../assets/img/teachers/3.jpg';
-import Img4 from '../assets/img/teachers/4.jpg';
-import Img5 from '../assets/img/teachers/5.jpg';
-import Img6 from '../assets/img/teachers/6.jpg';
-import Img7 from '../assets/img/teachers/7.jpg';
-import Img8 from '../assets/img/teachers/8.jpg';
-import Img9 from '../assets/img/teachers/9.jpg';
-import Img10 from '../assets/img/teachers/10.jpg';
+import I1 from '../assets/img/teachers/1.jpg';
+import I2 from '../assets/img/teachers/2.jpg';
+import I3 from '../assets/img/teachers/3.jpg';
+import I4 from '../assets/img/teachers/4.jpg';
+import I5 from '../assets/img/teachers/5.jpg';
+import I6 from '../assets/img/teachers/6.jpg';
+import I7 from '../assets/img/teachers/7.jpg';
+import I8 from '../assets/img/teachers/8.jpg';
+import I9 from '../assets/img/teachers/9.jpg';
+import I10 from '../assets/img/teachers/10.jpg';
 import '../style/teacher.css'
 const Teachers = () => {
     const productData =[
         {
           id:1,
-          img:Img1,
+          image:I1,
           name:"SHERMILLA. V",
           desc:"Principal",        
       },
       {
         id:2,
-        img:Img2,
+        image:I2,
         name:"SABEERA.P P",
         desc:"Vice Principal",       
     },    
     {
       id:3,
-      img:Img10,
+      image:I10,
       name:"REMYA.P K",
       desc:"Special Educator",       
   },      
     {
         id:4,
-        img:Img4,
+        image:I4,
         name:"NOORJAHAN.M",
         desc:"Special Educator",   
     },
     {
         id:5,
-        img:Img5,
+        image:I5,
         name:"BADARIYA.M K",
         desc:"Special Educator",
     },
     {
       id:6,
-      img:Img6,
+      image:I6,
       name:"JIJI.C K",
       desc:"Special Educator",
     },
     {
       id:7,
-      img:Img7,
+      image:I7,
       name:"RUGMA.T",
       desc:"Special Educator",
     }, {
       id:8,
-      img:Img8,
+      image:I8,
       name:"ROOPA.K",
       desc:"Special Educator",
     }, 
     {
       id:9,
-      img:Img9,
+      image:I9,
       name:"SINI.M G",
       desc:"Special Educator",
     },
     {
       id:10,
-      img:Img3,
+      image:I3,
       name:"MEERA VARGHESE",
       desc:"SpeechTherapist",       
   },
