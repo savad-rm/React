@@ -1,4 +1,4 @@
-import React, {useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 function Marquee() {
           
 const marqueeContentArray = [
@@ -7,6 +7,8 @@ const marqueeContentArray = [
     { text: "Vestibulum ut posuere turpis. Cras at elit et nisi condimentum volutpat.", link: "#" },
     { text: "Fusce aliquam mauris ac velit porta, sed facilisis elit feugiat.", link: "#" }
   ];
+
+  const [isPlaying] = useState(true);
   const marqueeRef = useRef(null);
 
   useEffect(() => {
