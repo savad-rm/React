@@ -90,7 +90,7 @@ position: relative;
 marquee {
     overflow: hidden;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0%) 0%, #000 var(--marquee-fade-edges), #000 calc(100% - var(--marquee-fade-edges)), rgba(0, 0, 0, 0%) 100%);
-    color: #0A5139;
+    color: #b61e53;
     z-index: 1; 
     width: 99%;
     
@@ -102,13 +102,13 @@ marquee {
     }
     a
     {
-      color: #0A5139;
+      color: #b61e53;
       text-decoration: none;
       list-style: none;
     }
     a:hover
     {
-      color: #0A5139 !important;
+      color: #b61e53 !important;
       text-decoration: none;
       list-style: none;
     }

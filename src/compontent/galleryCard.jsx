@@ -4,8 +4,8 @@ import '../style/gallery.css';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isPlaying] = useState(false);
-  const [ setCurrentIndex] = useState
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const data = [
     {
@@ -52,13 +52,22 @@ const Gallery = () => {
     setSelectedImage(null);
     document.body.style.overflow = 'scroll'; 
   };
+
+  const playSlideshow = () => {
+    setIsPlaying(true);
+  };
+
+  const stopSlideshow = () => {
+    setIsPlaying(false);
+  };
+
   useEffect(() => {
     let intervalId;
 
     if (isPlaying) {
       intervalId = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-      }, 2000); 
+      }, 2000); // Change slide every 2 seconds
     }
 
     return () => {
@@ -72,7 +81,7 @@ const Gallery = () => {
       <div className="container">
       <div className="row">
         {data.map((item, index) => (
-          <div key={index} className="col-md-4" data-aos="fade-up" data-aos-offset="10">
+          <div key={index} className="col-md-4">
             <div className="image-container" onClick={() => openLightbox(index)}>
               <img src={item.imageUrl} alt={item.name} className="gallery-image" />
               <div className="image-info">
@@ -87,8 +96,9 @@ const Gallery = () => {
       {selectedImage !== null && (
         <div className="lightbox">
           <span className="close-button" onClick={closeLightbox}>×</span>
-          <img src={data[selectedImage].imageUrl} alt={` ${selectedImage}`} className="lightbox-image" />
+          <img src={data[selectedImage].imageUrl} alt={{selectedImage}} className="lightbox-image" />
           <div className="lightbox-info">
+            {/* Add lightbox information here if needed */}
           </div>
         </div>
       )}

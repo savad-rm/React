@@ -6,7 +6,7 @@
 .popular-course-section h1::after{
         height: 2px;
         width: 250px;
-        background: #0A5139;
+        background: #b61e53;
         content: " ";
         display: block;
         margin: 15px auto;

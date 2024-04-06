@@ -1,5 +1,5 @@
 .right_conatct_social_icon{
-         background-color: #1F3046;
+         background-color: #0e2037;
 }
 .contact_us{
     background-color: #f1f1f1;
@@ -46,7 +46,7 @@
 .contact_field .form-control:focus{
     box-shadow: none;
     outline: none;
-    border-bottom: 2px solid #0A5139;
+    border-bottom: 2px solid #b61e53;
 }
 .contact_field .form-control::placeholder{
     font-size: 13px;
@@ -55,7 +55,7 @@
 
 .contact_info_sec {
     position: absolute;
-    background-color: #0F7A51 !important;
+    background-color:#b61e53 !important;
     right: 1px;
     top: 18%;
     height: 340px;
@@ -81,7 +81,7 @@
 
 button.contact_form_submit {
     border: none;
-    background-color: #0F7A51;
+    background-color: #0e2037;
     color: #fff;
     padding: 10px 15px;
     width: 100%;
@@ -90,6 +90,7 @@ button.contact_form_submit {
     cursor: pointer;
     font-size: 14px;
     letter-spacing: 2px;
+    border: none;
 }
 .button.contact_form_submit:focus
 {
