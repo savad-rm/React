@@ -5,7 +5,6 @@ import Banner from '../compontent/banner';
 import Course from '../compontent/coures';
 import CourseCard from '../compontent/course-card';
 import Funfact from '../compontent/funfac';
-import Classes from '../compontent/classes';
 import Certificate from '../compontent/certificate';
 import Testimonial from '../compontent/testimonial';
 import BlogSlider from '../compontent/blogslider';
@@ -27,7 +26,6 @@ function Home() {
         <Certificate></Certificate>
         <Funfact></Funfact>
         <Testimonial></Testimonial>
-        <Classes></Classes>
         <Footer></Footer>
     </div>
   )

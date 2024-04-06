@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {useEffect, useRef } from 'react';
 function Marquee() {
           
 const marqueeContentArray = [
@@ -7,9 +7,6 @@ const marqueeContentArray = [
     { text: "Vestibulum ut posuere turpis. Cras at elit et nisi condimentum volutpat.", link: "#" },
     { text: "Fusce aliquam mauris ac velit porta, sed facilisis elit feugiat.", link: "#" }
   ];
-
-  const [currentContentIndex, setCurrentContentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
   const marqueeRef = useRef(null);
 
   useEffect(() => {
@@ -23,22 +20,6 @@ const marqueeContentArray = [
       marqueeElement.stop();
     };
   }, [isPlaying]);
-
-  const handleTogglePlayPause = () => {
-    setIsPlaying(!isPlaying);
-  };
-
-  const handleNext = () => {
-    const nextIndex = (currentContentIndex + 1) % marqueeContentArray.length;
-    setCurrentContentIndex(nextIndex);
-    marqueeRef.current.scrollAmount += 2;
-  };
-
-  const handlePrevious = () => {
-    const previousIndex = (currentContentIndex - 1 + marqueeContentArray.length) % marqueeContentArray.length;
-    setCurrentContentIndex(previousIndex);
-    marqueeRef.current.scrollAmount -= 2;
-  };
   return (
     <div>
 <div className="marquee-top d-flex">

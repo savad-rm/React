@@ -4,7 +4,7 @@ import '../style/gallery.css';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying] = useState(false);
   const [ setCurrentIndex] = useState
 
   const data = [

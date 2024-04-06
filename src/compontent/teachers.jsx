@@ -132,7 +132,7 @@ const Teachers = () => {
               <div key={index} className="col-12" data-aos="fade-up">
               <div className="card-teacher mb-3">
               <div className="teacher-card">
-                <img src={item.img} alt={`Image ${index}`} className="gallery-image img-fluid" />
+                <img src={item.img} alt="image" className="gallery-image img-fluid" />
                 <div className='teacher-info'>
                     <h4>{item.name}</h4>
                     <h6>{item.desc}</h6>
